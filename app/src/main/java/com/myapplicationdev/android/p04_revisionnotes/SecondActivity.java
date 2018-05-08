@@ -17,7 +17,7 @@ public class SecondActivity extends AppCompatActivity {
 		lv=findViewById(R.id.lv);
 		DBHelper db2 = new DBHelper(SecondActivity.this);
 		ArrayList<Note> NotesArray;
-		NotesArray = db2.getColumnStars();
+		NotesArray = db2.getStarsColumn();
 		ArrayAdapter<Note> AA;
 
 		AA = new RevisionNotesArrayAdapter(SecondActivity.this, R.layout.row, NotesArray);
